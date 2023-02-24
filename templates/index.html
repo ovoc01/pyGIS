@@ -8,6 +8,17 @@
     <title>Document</title>
 </head>
 <body>
-    hello word
+    <form action="{{ url_for('hello_world') }}" method="post">
+        RN:
+        <select name="rn">
+            <option>RN2</option>
+            <option>RN3</option>
+            <option>RN4</option>
+        </select>
+        <br>
+        Longitude:<input name="longitude" type="text"><br>
+        Latitude:<input name="latitude" type="text"><br>
+        <input type="submit" value="submit">
+    </form>
 </body>
 </html>
